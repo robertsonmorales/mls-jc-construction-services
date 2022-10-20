@@ -11,61 +11,46 @@ useScrolling('nav', {
     // interval: 50
 });
 
-useScrolling('#my-profile', {
+useScrolling('.flex-hero', {
     delay: 300,
     distance: '5%',
     origin: 'top',
     easing: 'ease'
 });
 
-useScrolling('#intro', {
+useScrolling('.cta', {
     delay: 100,
     distance: '5%',
-    origin: 'right',
+    origin: 'left',
     easing: 'ease'
 });
 
-useScrolling('#specialize', {
+useScrolling('.hero-img', {
     delay: 200,
     distance: '5%',
-    origin: 'left',
+    origin: 'right',
     easing: 'ease'
 });
 
 // CAll TO ACTIONS
-useScrolling('#btn-my-works', {
+useScrolling('.ellipsis', {
     delay: 300,
     distance: '15%',
-    origin: 'left',
-    easing: 'ease'
+    origin: 'bottom',
+    easing: 'ease',
+    interval: 0
 });
 
-useScrolling('#btn-download-resume', {
+useScrolling('.line', {
     delay: 300,
     distance: '15%',
     origin: 'right',
     easing: 'ease'
 });
 
-useScrolling('#avatar', {
+useScrolling('.title', {
     delay: 100,
     duration: 900,
-    distance: '10%',
-    origin: 'top',
-    easing: 'ease'
-});
-// ENDS HERE
-
-// TITLE
-useScrolling('.text-section', {
-    delay: 200,
-    distance: '10%',
-    origin: 'top',
-    easing: 'ease'
-});
-
-useScrolling('.text-highlight', {
-    delay: 300,
     distance: '10%',
     origin: 'top',
     easing: 'ease'
@@ -82,58 +67,44 @@ useScrolling('.card-group .card-service', {
 });
 // ENDS HERE
 
-// WORKS
-useScrolling('.placeholder', {
-    delay: 300,
-    distance: '15%',
-    origin: 'bottom',
-    easing: 'ease'
-});
-
-useScrolling('.work-title', {
-    delay: 300,
-    distance: '5%',
-    origin: 'left',
-    easing: 'ease-out',
-});
-
-useScrolling('.built-with-using', {
-    delay: 300,
-    distance: '5%',
-    origin: 'top',
-    easing: 'ease',
-});
-
-useScrolling('.work-description', {
-    delay: 300,
-    distance: '5%',
-    origin: 'right',
-    easing: 'ease',
-});
-
-useScrolling('.work-action a', {
-    delay: 300,
-    distance: '10%',
-    origin: 'bottom',
-    easing: 'ease',
-});
-
-useScrolling('.work-img-wrapper a img', {
-    delay: 300,
-    distance: '5%',
-    origin: 'bottom',
-    easing: 'ease',
-});
-// ENDS HERE
-
-// SKILLS
-useScrolling('.skill-gallery img', {
+// Services
+useScrolling('.card', {
     delay: 300,
     distance: '5%',
     origin: 'top',
     easing: 'ease',
     interval: 50
 });
+
+useScrolling('.card-img', {
+    delay: 300,
+    distance: '5%',
+    origin: 'bottom',
+    easing: 'ease',
+});
+
+useScrolling('.card-title', {
+    delay: 300,
+    distance: '5%',
+    origin: 'left',
+    easing: 'ease-out',
+});
+
+useScrolling('.card-text', {
+    delay: 300,
+    distance: '5%',
+    origin: 'right',
+    easing: 'ease',
+});
+
+useScrolling('.card-footer a', {
+    delay: 300,
+    distance: '10%',
+    origin: 'bottom',
+    easing: 'ease',
+});
+
+
 // ENDS HERE
 
 // ABOUT ME
@@ -141,33 +112,13 @@ useScrolling('.a-bit-about-me', {
     delay: 300,
     distance: '5%',
     origin: 'right',
-    easing: 'ease'
+    easing: 'ease',
+    interval: 100
 });
 
-useScrolling('.btn-download-resume', {
-    delay: 300,
-    distance: '15%',
-    origin: 'bottom',
-    easing: 'ease'
-});
-
-useScrolling('.img-drop-shadow', {
+useScrolling('.about-img', {
     delay: 300,
     distance: '25%',
-    origin: 'right',
-    easing: 'ease'
-});
-
-// useScrolling('#btn-download-resume', {
-//     delay: 500,
-//     distance: '10%',
-//     origin: 'left',
-//     easing: 'ease'
-// });
-
-useScrolling('#my-avatar', {
-    delay: 500,
-    distance: '10%',
     origin: 'right',
     easing: 'ease'
 });
