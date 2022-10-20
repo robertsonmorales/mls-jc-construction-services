@@ -1,0 +1,41 @@
+.hero-left{
+    @include flexbox(center, flex-start);
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    @extend .px-5;
+}
+
+.hero-right{
+    height: 100%;
+    @include flexbox(center, center);
+
+    .hero-img{
+        position: absolute;
+        left: -150px;
+        width: 557px;
+        height: 538px;
+        object-fit: fill;
+    }
+
+    .ellipsis{
+        background: url("../images/ellipsis.svg");
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+
+        &:first-child{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        &:last-child{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+

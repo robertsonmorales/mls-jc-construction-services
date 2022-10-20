@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="A Freelance Web Developer & Designer mainly creating information management systems and have extensive knowledge of both Front-end and Back-end Development."> -->
+    <!-- <meta name="keywords" content="Web Developer | Web Designer | UI/UX Design | HTML5, CSS3 (Sass, Bootstrap), JavaScript (jQuery, Vue.js), PHP (Laravel), and SQL"> -->
+    <meta name="author" content="Robertson Morales">
+    <meta name="robots" content="index, follow">
+
+    <title>MLS JC Construction Services</title>
+    <!-- preloads -->
+
+    <!-- styles -->
+    <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="resources/sass/style.css" as="style">
+    <!-- ends here -->
+
+    <!-- javascripts -->
+    <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
+    <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="resources/js/script.js" as="script">
+    <!-- ends here -->
+
+    <!-- images -->
+    <link rel="preload" href="resources/images/me/profile.webp" as="image">
+    <!-- ends here -->
+    <!-- preloads ends here -->
+
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+
+    <!-- <link rel="canonical" href="robertsonmorales.netlify.app">
+    <link rel="shortcut icon" href="resources/images/me/profile.webp"> -->
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+    <!-- Ends here -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+            <div class="container from-nav">
+                <button class="navbar-brand border-0 bg-transparent outline-none"
+                    onclick="navSelected('hero')">
+                    <img src="images/logo.png" alt="Logo" width="150">
+                </button>
+                
+                <button class="navbar-toggler border-0 outline-none"
+                    type="button" 
+                    data-toggle="collapse"
+                    data-target="#toggleNavbar" 
+                    aria-controls="toggleNavbar" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <em data-feather="menu"></em>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="toggleNavbar">    
+                    <ul class="navbar-nav mr-auto"></ul>
+                    
+                    <div class="navbar-text">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <button class="nav-link navbar font-weight-500 active"
+                                id="nav-hero" 
+                                onclick="navSelected('hero')">Home</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link navbar"
+                                id="nav-services"
+                                onclick="navSelected('services')">Products</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link navbar"
+                                id="nav-about" 
+                                onclick="navSelected('about')">About Us</button>
+                            </li>
+                            <li>
+                                <div class="v-divider"></div>
+                            </li>
+                            <li class="ml-3 nav-item"> <!-- mr-md-5 -->
+                                <a href="tel:+639123456789"
+                                    class="nav-link navbar text-primary"
+                                    id="nav-contact">
+                                    <em data-feather="phone"></em>
+                                    <span class="ml-2">+639123456789</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="screen-height">
+            <div class="container">
+                <div class="row vh-100">
+                    <div class="col-7 bg-color">
+                        <div class="hero-left">
+                            <div class="flex-hero">
+                                <p class="text-muted">Welcome to</p>
+                                <h1 class="h1 font-weight-bolder mb-3">MLS <span class="text-primary">JC</span> <br> Construction <br> Services</h1>
+                                <p class="text-muted">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. </p>
+                            </div>
+                            <div class="cta">
+                                <button class="btn btn-primary text-white">Our Projects →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="hero-right">
+                            <div class="ellipsis"></div>
+                            <img src="images/hero.png" alt="hero image" width="557" height="538" class="hero-img">                            
+                            <div class="ellipsis"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ends here -->
+
+        <section id="services">
+            <div class="container bg-color p-5">
+                <div class="row flex-column our-services-section">
+                    <div class="col">
+                        <div class="flexbox-center flex-column">
+                            <div class="line"></div>
+                            <h1 class="h1 font-weight-bolder">Our Services</h1>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service-cards">
+                            
+                            <div class="card">
+                                <div class="card-img px-5 pt-5">
+                                    <img src="images/captures/diesel-generator.jpg" 
+                                        alt="Diesel Generator Supplier" 
+                                        class="img-fluid"
+                                        width="439"
+                                        height="250">
+                                </div>
+                                <div class="card-body px-5">
+                                    <h4 class="card-title">Diesel Generator Supplier</h4>
+                                    <div class="card-text text-muted">Cummins Inc., a global power leader, Founded in Columbus, Ind., in 1919 as Cummins Engine Company, for its namesake Clessie Lyle ....</div>
+                                </div>
+                                <div class="card-footer px-5 pb-5">
+                                    <a href="#">View Product →</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-img px-5 pt-5">
+                                    <img src="images/captures/distribution-transformers.jpg" 
+                                        alt="Distribution Transformers"
+                                        class="img-fluid"
+                                        width="439"
+                                        height="250">
+                                </div>
+                                <div class="card-body px-5">
+                                    <h4 class="card-title">Distribution Transformers</h4>
+                                    <div class="card-text text-muted">Having a big sale, on-site celebrity, or other event? Be sure to announce it so everybody knows and gets excited about it.</div>
+                                </div>
+                                <div class="card-footer px-5 pb-5">
+                                    <a href="#">View Product →</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-img px-5 pt-5">
+                                    <img src="images/captures/road-concreting.jpg" 
+                                        alt="Road Concreting"
+                                        class="img-fluid"
+                                        width="439"
+                                        height="250">
+                                </div>
+                                <div class="card-body px-5">
+                                    <h4 class="card-title">Road Concreting</h4>
+                                    <div class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis arcu enim urna adipiscing praesent velit viverra.</div>
+                                </div>
+                                <div class="card-footer px-5 pb-5">
+                                    <a href="#">View Product →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row no-gutters flex-column flex-md-row border-radius">
+                    <div class="col d-flex align-items-start justify-content-center flex-column">
+                        <div class="text-section">A BIT ABOUT ME &#128075;</div>
+                        <h2 class="mb-3 text-highlight h1">Robertson Morales</h2>
+                        <p class="a-bit-about-me">I live in San Jose Del Monte City, Bulacan. I have a Bachelor of Science Degree in Information Technology. I work as a Passionate Web Developer & Designer, where I've developed and contributed to projects such as Travel, Loan, E-Commerce, E-Gift Certificates, and Revamp Websites. 
+                        <br><br>My hobbies are watching anime, tutorial videos, reading articles, and playing with my pets.</p>
+    
+                        <div class="mb-3"></div>
+    
+                        <div class="d-none d-md-block">
+                            <a class="btn btn-outline-primary btn-download-resume"
+                            href="resources/attachment/resume.pdf"
+                            download="Resume">Download Resume</a>
+                        </div>
+    
+                        <!-- <div class="mb-4 mb-md-0"></div> -->
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <div class="bg-light about-radius">
+                            <div class="pt-1 pt-md-5 mb-3 mb-md-0">
+                                <div class="flexbox-center overflow-hidden">
+                                    <img class="img-drop-shadow" 
+                                        src="resources/images/me/profile.webp" 
+                                        loading="lazy"
+                                        width="462"
+                                        height="475"
+                                        alt="Avatar">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="d-block d-md-none">
+                            <a class="btn btn-outline-primary btn-download-resume"
+                            href="resources/attachment/resume.pdf"
+                            download="Resume">Download Resume</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center py-1 bg-light">
+            <div class="text-muted font-weight-500">&copy; <span id="year"></span> | Robertson Morales</div>
+        </div>
+    </footer>
+
+    <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
+
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/contact.js"></script>
+</body>
+</html>

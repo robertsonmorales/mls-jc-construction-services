@@ -1,0 +1,35 @@
+@import '_variables';
+@import '_mixins';
+
+@import '../plugins/bootstrap/scss/bootstrap';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $white;   
+    color: $dark;
+    font: $font-size $font-stack;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+section{
+    margin-bottom: 80px;
+}
+
+@import '_overwrite';
+@import '_custom';
+
+@import 'sections/_hero';
+@import 'sections/_services';
+
+@import '_breakpoint';

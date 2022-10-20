@@ -1,0 +1,18 @@
+.line{
+    background: url("../images/Line.png");
+    background-size: cover;
+    height: 5px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.our-services-section{
+    gap: 80px;
+
+    .service-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 38px;
+        row-gap: 38px;
+    }
+}

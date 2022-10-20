@@ -1,0 +1,338 @@
+/* FLEXBOX */ 
+.flexbox-center{
+    @include flexbox(center, center);
+}
+
+.flexbox-start{
+    @include flexbox(flex-start, center);
+}
+
+.flexbox-between{
+    @include flexbox(space-between, flex-start);
+}
+
+.flexbox-end{
+    @include flexbox(flex-end, center);
+}
+/* ENDS HERE*/
+
+/* IMAGES */
+.img-fluid-extension{
+    object-fit: fill;
+    width: 110px;
+    height: 110px;
+}
+/* ENDS HERE */
+
+/* FORMS */
+.input-group{
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label{
+        font-size: .9em !important;
+        margin-bottom: 3px !important;
+    }
+}
+/* ENDS HERE */
+
+/* FONT */
+.font-weight-500{
+    font-weight: 500;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.font-size-sm{
+    font-size: .8em !important;
+}
+/* ENDS HERE */
+
+/* CUSTOM SHADOW */
+.drop-shadow{
+    filter: drop-shadow($drop-shadow);
+}
+/* ENDS HERE */
+
+/* POSITION */
+.position-inherit{
+    position: inherit;
+    z-index: 1;
+}
+/* ENDS HERE */
+
+.card-service{
+    @extend .card, .p-md-3;
+    overflow: hidden;
+    background-color: $light;
+    transition: all .4s ease;
+
+    .card-hover{
+        z-index: -1;
+        clip-path: circle(0% at 50% 50%);
+        // background-color: #6440ff;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .6s ease;
+
+        @extend .h-100, .w-100;
+    }
+
+    .card-header{
+        .feather{
+            width: 40px; 
+            color: $dark;
+        }
+    }
+
+    .card-body{
+        .card-text{
+            color: $text-muted;
+        }
+    }
+
+    &:hover{
+        // background-color: $white;
+        color: $white;
+        transform: scale(1.05);
+        z-index: 1;
+        @extend .shadow;
+
+        .card-hover{
+            clip-path: circle(100% at 50% 50%);
+        }
+        
+        .feather, .card-title, .card-text{            
+            color: $secondary;
+        }
+    }
+}
+
+.img-fluid-hovered{
+    width: 100%;
+    transition: all .4s ease;
+
+    &:hover{
+        opacity: .9;
+        // transform: scale(1.05);
+    }
+}
+
+.screen-height{
+    min-height: 100vh;
+    @extend .flexbox-center;
+}
+
+.saturate{
+    filter: saturate(0.1);
+}
+
+.text-section{
+    font-weight: bold;
+    color: $primary;
+}
+
+.text-highlight{
+    color: $dark;
+    letter-spacing: -1px;
+}
+
+.flexbox-works{
+    align-items: center;
+    flex-direction: column-reverse;
+    @extend .my-3, .py-5;
+}
+
+// * Builth with ???
+.built-with{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.built-with-using{
+    @extend .mt-2, .mr-2;
+}
+// * ends here
+
+// * Works here
+.work-img-wrapper{  
+    @extend .mb-4, .mb-md-0;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img{
+        transition: all .4s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.work-description{
+    @extend .text-muted;
+}
+
+.work-action{
+    @extend .mt-4, .flexbox-start;
+}
+// * ends here
+
+// * Skills
+.skill-gallery{
+    .skill-img{
+       @extend .img-fluid, .img-fluid-extension;
+    }
+}
+// * ends here
+
+// * a bit about me
+.a-bit-about-me{
+    @extend .text-muted;
+}
+
+.btn-download-resume{
+    @extend .mobile-w-100;
+}
+
+.img-drop-shadow{
+    @extend .img-fluid;
+    filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
+    object-fit: fill;
+}
+// * ends here
+.media-icon{
+    @extend .text-decoration-none;
+}
+
+.bg-color{
+    background-color: $body-bg;
+}
+
+.my-avatar{
+    border-radius: 50% !important;
+    object-fit: fill;
+}
+
+.icon-wrapper{
+    @extend .flexbox-center;
+}
+
+.font-16{
+    width: 16px;
+    height: 16px;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.outline-none{
+    outline: none;
+}
+
+.border-radius{
+    border-radius: $radius;
+}
+
+.placeholder{
+    color: #f3f3f3;
+    font-size: 80px;
+    z-index: -1;
+    font-weight: 900;
+    pointer-events: none;
+}
+
+.placeholder-1::before{
+    content: "01";
+}
+
+.placeholder-2::before{
+    content: "02";
+}
+
+.placeholder-3::before{
+    content: "03";
+}
+
+.placeholder-4::before{
+    content: "04";
+}
+
+.border-top-left-radius{
+    border-top-left-radius: 10%;
+}
+
+.border-top-right-radius{
+    border-top-right-radius: 10%;
+}
+
+.border-bottom-left-radius{
+    border-bottom-left-radius: 10%;
+}
+
+.border-bottom-right-radius{
+    border-bottom-right-radius: 10%;
+}
+
+.about-radius{
+    @extend .border-radius;
+    // .border-top-left-radius, .border-bottom-left-radius;
+}
+
+.contact-radius{
+    @extend .border-radius, .border-bottom-right-radius, .border-top-right-radius;
+}
+
+.contact-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-information{
+    @extend .text-left;
+
+    a{
+        color: $dark;
+        text-decoration: none;
+    }
+
+    .btn-socmedia{
+        @extend .mr-3, .flexbox-center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        transition: all .2s ease;
+
+        &:hover{
+            background-color: $secondary;
+            color: $light;
+        }
+    }
+
+    .feather{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.divider{
+    height: 1px;
+    border: 1px solid #777;
+    @extend .my-4, .w-50;
+}
+
+.contact-card{
+    @extend .border-radius, .p-1, .mt-5, .bg-white;
+}
+
+#offered-services{
+    display: flex; 
+    flex-wrap: wrap;
+}
