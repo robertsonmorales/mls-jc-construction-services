@@ -7,6 +7,10 @@
     @include flexbox(flex-start, center);
 }
 
+.flexbox-start-start{
+    @include flexbox(flex-start, start);
+}
+
 .flexbox-between{
     @include flexbox(space-between, flex-start);
 }
@@ -335,4 +339,22 @@
 #offered-services{
     display: flex; 
     flex-wrap: wrap;
+}
+
+.quick-links{
+    @include flexbox(center, center);
+    gap: 16px;
+    
+    a{
+        color: $light;
+    }
+}
+
+.social-media{
+    @include flexbox(flex-end, center);
+    gap: 16px;
+}
+
+.top-footer{
+    border-bottom: 1px solid $dim-gray;
 }
