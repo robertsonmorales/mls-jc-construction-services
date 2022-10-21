@@ -41,10 +41,9 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light" id="navbar">
             <div class="container from-nav">
-                <button class="navbar-brand border-0 bg-transparent outline-none"
-                    onclick="navSelected('hero')">
-                    <img src="../../images/logo.png" alt="Logo" width="150">
-                </button>
+                <a href="index.html" class="navbar-brand border-0 bg-transparent outline-none">
+                    <img src="images/logo.png" alt="Logo" width="150">
+                </a>
                 
                 <button class="navbar-toggler border-0 outline-none"
                     type="button" 
@@ -85,10 +84,13 @@
                                 <div class="dropdown p-4">
                                     <ul class="list-group">
                                         <li class="py-1">
-                                            <a href="diesel-generators.html" class="dropdown-list">Diesel Generator</a>
+                                            <a href="diesel-generators.html" class="dropdown-list">Diesel Generators</a>
                                         </li>
                                         <li class="py-1">
-                                            <a href="#" class="dropdown-list">Transformers</a>
+                                            <a href="distribution-transformers.html" class="dropdown-list">Distribution Transformers</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a href="road-concreting.html" class="dropdown-list">Road Concreting</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,8 +98,7 @@
                             <li class="nav-item">
                                 <a href="index.html#about"
                                     class="nav-link navbar"
-                                    id="nav-about" 
-                                onclick="navSelected('about')">About Us</a>
+                                    id="nav-about">About Us</a>
                             </li>
                             <li>
                                 <div class="v-divider"></div>
@@ -229,7 +230,7 @@
         <div class="container px-5 pt-5">
             <div class="top-footer flexbox-between align-items-center pb-5">
                 <div class="branding-logo">
-                    <img src="images/logo.png" alt="Logo">
+                    <img src="assets/images/logo.png" alt="Logo">
                 </div>
                 <div class="quick-links">
                     <a href="index.html">Home</a>
@@ -239,32 +240,35 @@
                 </div>
     
                 <div class="social-media">
-                    <a href="#" class="icon">
-                        <img src="images/Facebook.png" alt="Facebook" width="32" height="32"> 
+                    <a href="mailto:mlsjcconstruction@yahoo.com" class="icon">
+                        <img src="assets/images/Mail.png" alt="Mail" width="32" height="32"> 
                     </a>
                     <a href="#" class="icon">
-                        <img src="images/Twitter.png" alt="Twitter" width="32" height="32">
+                        <img src="assets/images/Facebook.png" alt="Facebook" width="32" height="32"> 
                     </a>
                     <a href="#" class="icon">
-                        <img src="images/Tiktok.png" alt="Tiktok" width="32" height="32">
+                        <img src="assets/images/Twitter.png" alt="Twitter" width="32" height="32">
                     </a>
                     <a href="#" class="icon">
-                        <img src="images/Instagram.png" alt="Instagram" width="32" height="32">
+                        <img src="assets/images/Tiktok.png" alt="Tiktok" width="32" height="32">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="assets/images/Instagram.png" alt="Instagram" width="32" height="32">
                     </a>
                 </div>
             </div>
             <div class="bottom-footer mt-5 text-center">
-                <p class="font-size-sm text-muted mb-0 pb-2">Copyright © 2022 - All Rights Reserved.</p>
+                <p class="font-size-sm text-muted mb-0 pb-2">Copyright © <span id="year"></span> - All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+    <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script defer src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="assets/plugins/feather-icons/dist/feather.min.js"></script>
 
-    <script defer src="js/scroll.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="assets/js/scroll.js"></script>
+    <script defer src="assets/js/script.js"></script>
 </body>
 </html>
