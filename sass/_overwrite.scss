@@ -57,6 +57,10 @@
         &:hover{
             color: $primary !important;
         }
+
+        &:active{
+            color: $dark !important;
+        }
     }
 }
 

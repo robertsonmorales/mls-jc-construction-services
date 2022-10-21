@@ -54,22 +54,25 @@ $(() => {
     $('#year').html(date.getFullYear());
 
     $(document).on('scroll', function () {
+        $('.dropdown').hide();
         // $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
         // $("#navbar").toggleClass('bg-color', $(this).scrollTop() > $("#navbar").height());
+
 	});
 
-    function navBarHeight(){
-        var set_height = $('#navbar').height() * 2;
-        $('#about').css('margin-top', set_height + "px");
-        $('#services').css('margin-top', set_height + "px");
-        $('#projects').css('margin-top', set_height + "px");
-        $('#skills').css('margin-top', set_height + "px");
-        $('#contact').css('margin-top', set_height + "px");
-    }   
+    // function navBarHeight(){
+    //     var set_height = $('#navbar').height() * 2;
+    //     $('#about').css('margin-top', set_height + "px");
+    //     $('#services').css('margin-top', set_height + "px");
+    //     $('#projects').css('margin-top', set_height + "px");
+    //     $('#skills').css('margin-top', set_height + "px");
+    //     $('#contact').css('margin-top', set_height + "px");
+    // }   
 
-    // navBarHeight(); 
+    // navBarHeight();
 
-    $('#btn-call').click(function(){
-        window.location.href = "tel:639552808438";
+    $('#nav-products').on('click', function(){
+        $(this).next().toggle(50);
+        $('.arrow')
     });
 });

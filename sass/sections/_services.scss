@@ -8,11 +8,15 @@
 
 .our-services-section{
     gap: 80px;
+}
 
-    .service-cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 38px;
-        row-gap: 38px;
-    }
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 38px;
+    row-gap: 38px;
+}
+
+.float-top{
+    transform: translateY(-190px);
 }
