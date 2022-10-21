@@ -57,7 +57,8 @@ $(() => {
         $('.dropdown').hide();
         // $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
         // $("#navbar").toggleClass('bg-color', $(this).scrollTop() > $("#navbar").height());
-
+        $("#navbar").toggleClass('fixed-top', $(this).scrollTop() > $("#navbar").height());
+        $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
 	});
 
     // function navBarHeight(){
