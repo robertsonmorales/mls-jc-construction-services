@@ -358,3 +358,28 @@
 .top-footer{
     border-bottom: 1px solid $dim-gray;
 }
+
+.dropdown{
+    box-shadow: $shadow;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 4px;
+    display: none;
+
+    ul{
+        list-style: none;
+
+        li{
+            .dropdown-list{
+                text-decoration: none;
+                color: $text-muted;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

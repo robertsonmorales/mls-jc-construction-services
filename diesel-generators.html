@@ -43,7 +43,7 @@
             <div class="container from-nav">
                 <button class="navbar-brand border-0 bg-transparent outline-none"
                     onclick="navSelected('hero')">
-                    <img src="images/logo.png" alt="Logo" width="150">
+                    <img src="../../images/logo.png" alt="Logo" width="150">
                 </button>
                 
                 <button class="navbar-toggler border-0 outline-none"
@@ -62,14 +62,14 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item">
-                                <button class="nav-link navbar active"
-                                id="nav-hero" 
-                                onclick="navSelected('hero')">Home</button>
+                                <a href="index.html"
+                                    class="nav-link navbar active"
+                                    id="nav-hero">Home</a>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link navbar"
-                                id="nav-services" 
-                                onclick="navSelected('services')">Services</button>
+                                <a href="index.html#services" 
+                                    class="nav-link navbar"
+                                    id="nav-services">Services</a>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-link navbar"
@@ -90,16 +90,14 @@
                                         <li class="py-1">
                                             <a href="#" class="dropdown-list">Transformers</a>
                                         </li>
-                                        <!-- <li class="py-1">
-                                            <a href="#" class="dropdown-list">Road Concreting</a>
-                                        </li> -->
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link navbar"
-                                id="nav-about" 
-                                onclick="navSelected('about')">About Us</button>
+                                <a href="index.html#about"
+                                    class="nav-link navbar"
+                                    id="nav-about" 
+                                onclick="navSelected('about')">About Us</a>
                             </li>
                             <li>
                                 <div class="v-divider"></div>
@@ -120,74 +118,50 @@
     </header>
 
     <main>
-        <!-- Hero -->
-        <section id="hero" class="screen-height">
-            <div class="container">
-                <div class="row vh-100">
-                    <div class="col-7 bg-color">
-                        <div class="hero-left">
-                            <div class="flex-hero">
-                                <p class="text-muted">Welcome to</p>
-                                <h1 class="h1 font-weight-bolder mb-3">MLS <span class="text-primary">JC</span> <br> Construction <br> Services</h1>
-                                <p class="text-muted">Amet minim mollit non deserunt ullamco <br> est sit aliqua dolor do amet sint. </p>
-                            </div>
-                            <div class="cta">
-                                <button class="btn btn-primary text-white">Our Projects →</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="hero-right">
-                            <div class="ellipsis"></div>
-                            <img src="images/hero.png" alt="hero image" width="557" height="538" class="hero-img">                            
-                            <div class="ellipsis"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="background-banner" class="mb-0">
+            <div class="container bg-banner"></div>
         </section>
-        <!-- Ends here -->
 
-        <section id="services">
-            <div class="container bg-color p-5">
-                <div class="row flex-column our-services-section">
-                    <div class="col">
+        <section id="generators">
+            <div class="container bg-color px-5 pt-5 pb-0">
+                <div class="bg-white float-top">
+                    <div class="py-5">
                         <div class="flexbox-center flex-column">
                             <div class="line"></div>
-                            <h1 class="h1 font-weight-bolder title">Our Services</h1>
+                            <h1 class="h1 font-weight-bolder title">Diesel Generators Supplies</h1>
                         </div>
                     </div>
-                    <div class="col">
+
+                    <div class="products">
                         <div class="service-cards">
-                            
                             <div class="card">
                                 <div class="card-img px-5 pt-5">
-                                    <img src="images/captures/diesel-generator.jpg" 
-                                        alt="Diesel Generator Supplier" 
+                                    <img src="images/diesel-generators/cummins.webp" 
+                                        alt="Cummins" 
                                         class="img-fluid"
                                         width="439"
                                         height="250">
                                 </div>
                                 <div class="card-body px-5">
-                                    <h4 class="card-title font-weight-bold">Diesel Generator Supplier</h4>
-                                    <div class="card-text text-muted">Cummins Inc., a global power leader, Founded in Columbus, Ind., in 1919 as Cummins Engine Company, for its namesake Clessie Lyle ....</div>
+                                    <h4 class="card-title font-weight-bold">Cummins</h4>
+                                    <p class="card-text text-muted">Cummins Inc., a global power leader, Founded in Columbus, Ind., in 1919 as Cummins Engine Company, for its namesake Clessie Lyle Cummins ....</p>
                                 </div>
                                 <div class="card-footer px-5 pb-5">
-                                    <a href="diesel-generators.html">View Product →</a>
+                                    <a href="#">View More →</a>
                                 </div>
                             </div>
-                            
+
                             <div class="card">
                                 <div class="card-img px-5 pt-5">
-                                    <img src="images/captures/distribution-transformers.jpg" 
-                                        alt="Distribution Transformers"
+                                    <img src="images/diesel-generators/vman.webp" 
+                                        alt="VMAN" 
                                         class="img-fluid"
                                         width="439"
                                         height="250">
                                 </div>
                                 <div class="card-body px-5">
-                                    <h4 class="card-title font-weight-bold">Distribution Transformers</h4>
-                                    <div class="card-text text-muted">Having a big sale, on-site celebrity, or other event? Be sure to announce it so everybody knows and gets excited about it.</div>
+                                    <h4 class="card-title font-weight-bold">VMAN</h4>
+                                    <p class="card-text text-muted">VMAN Diesel Engine use the Technology from MAN Germany,it have the same specification and quality as Doosan Engine,but the price is much cheaper ....</p>
                                 </div>
                                 <div class="card-footer px-5 pb-5">
                                     <a href="#">View Product →</a>
@@ -196,51 +170,54 @@
 
                             <div class="card">
                                 <div class="card-img px-5 pt-5">
-                                    <img src="images/captures/road-concreting.jpg" 
-                                        alt="Road Concreting"
+                                    <img src="images/diesel-generators/volvo.webp" 
+                                        alt="Volvo" 
                                         class="img-fluid"
                                         width="439"
                                         height="250">
                                 </div>
                                 <div class="card-body px-5">
-                                    <h4 class="card-title font-weight-bold">Road Concreting</h4>
-                                    <div class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis arcu enim urna adipiscing praesent velit viverra.</div>
+                                    <h4 class="card-title font-weight-bold">Volvo</h4>
+                                    <p class="card-text text-muted">Volvo engines for standby power, you’ll benefit from reliable startability and dependable backup high-effect power where and when you need it ....</p>
                                 </div>
                                 <div class="card-footer px-5 pb-5">
                                     <a href="#">View Product →</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="about">
-            <div class="container bg-color p-5">
-                <div class="row no-gutters flex-column flex-md-row align-items-md-center border-radius">
-                    <div class="col d-flex align-items-start justify-content-center flex-column about-us-section">
-                        <div class="flexbox-start-start flex-column">
-                            <div class="line"></div>
-                            <h1 class="h1 font-weight-bolder title">About Us</h1>
-                        </div>
+                            
+                            <div class="card">
+                                <div class="card-img px-5 pt-5">
+                                    <img src="images/diesel-generators/doosan.webp" 
+                                        alt="Doosan" 
+                                        class="img-fluid"
+                                        width="439"
+                                        height="250">
+                                </div>
+                                <div class="card-body px-5">
+                                    <h4 class="card-title font-weight-bold">Doosan</h4>
+                                    <p class="card-text text-muted">Doosan Diesel generator is emerging as a world-class engine company with a full lineup of diesel and gas engines for buses ....</p>
+                                </div>
+                                <div class="card-footer px-5 pb-5">
+                                    <a href="#">View Product →</a>
+                                </div>
+                            </div>
 
-                        <div class="desc">
-                            <p class="a-bit-about-me">The <span class="text-primary">MLS JC Construction Services</span> is a sister company of  Mindanao Laboratory Services (MLS) which is a sole proprietorship company located at Davao St., Aluba, Macasandig, Cagayan de Oro  City. It was established on December 3, 2007, and started to operate in the first quarter of the following year.</p>
-                            <p class="a-bit-about-me"><span class="text-primary">MLS JC Construction Services</span> is now primarily engaged in construction services and sand and gravel quarry. Site development,  road concreting, and design and build of residential, commercial,  industrial building structures and other civil works projects.</p>
-                            <p class="a-bit-about-me">Also, the company engages in trading of goods like Heavy Duty  Industrial Diesel Generators, Distribution Transformers, LED lights up to 4th generation Luminaires, Heavy equipment, Air Compressors,  Pneumatic Equipment, Variable Frequency Drives, Chlorine Dioxide,  Dosing Pumps and Submersible Deep well Pumps, Electric Chain Hoist and High Volume Low-Speed Industrial Fan through government contracting. We also served private customers.</p>
-                            <p class="a-bit-about-me">The objective of <span class="text-primary">MLS JC Construction Services</span> is to be a  proactive construction business enterprise backed up by our dynamic staff, and experienced and proactive workforce. Every member of the MLS  JC staff is in the continued pursuit of the highest level of quality workmanship. Customer satisfaction is a must in the performance of its construction business.</p>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col">
-                        <div class="flexbox-center overflow-hidden">
-                            <img class="img-fluid about-img" 
-                                src="images/captures/about-us.png" 
-                                loading="lazy"
-                                width="462"
-                                height="475"
-                                alt="About Us">
+                            <div class="card">
+                                <div class="card-img px-5 pt-5">
+                                    <img src="images/diesel-generators/perkins.webp" 
+                                        alt="Perkins" 
+                                        class="img-fluid"
+                                        width="439"
+                                        height="250">
+                                </div>
+                                <div class="card-body px-5">
+                                    <h4 class="card-title font-weight-bold">Perkins</h4>
+                                    <p class="card-text text-muted">Perkins Diesel generator set rated speed 1500rpm, four-stroke, water cooling fan, turbo, in the cold air, with ISO3046 ....</p>
+                                </div>
+                                <div class="card-footer px-5 pb-5">
+                                    <a href="#">View Product →</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,10 +232,10 @@
                     <img src="images/logo.png" alt="Logo">
                 </div>
                 <div class="quick-links">
-                    <a href="#">Home</a>
-                    <a href="#services">Services</a>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#services">Services</a>
                     <!-- <a href="#">Products</a> -->
-                    <a href="#about">About Us</a>
+                    <a href="index.html#about">About Us</a>
                 </div>
     
                 <div class="social-media">
