@@ -344,6 +344,7 @@
 
 .quick-links{
     @include flexbox(center, center);
+    @extend .flex-column, .flex-lg-row;
     gap: 16px;
     
     a{
@@ -358,6 +359,7 @@
 
 .top-footer{
     border-bottom: 1px solid $dim-gray;
+    gap: 40px;
 }
 
 .dropdown{

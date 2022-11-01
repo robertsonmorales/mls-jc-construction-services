@@ -74,6 +74,9 @@ $(() => {
 
     $('#nav-products').on('click', function(){
         $(this).next().toggle(50);
-        $('.arrow')
+    });
+
+    $('.navbar-toggler').on('click', function(){
+        $('#nav-products').next().hide(50);
     });
 });
