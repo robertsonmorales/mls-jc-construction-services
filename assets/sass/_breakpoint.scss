@@ -39,6 +39,31 @@
     .fixed-top{
         position: static;
     }
+
+    .hero-on-mobile{
+        background-image: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,0.5)), url("../images/hero.png");
+        background-size: cover;
+
+        .text-muted{
+            color: $body-bg !important;
+        }
+
+        .h1{
+            color: $white;
+        }
+    }
+
+    .service-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dropdown{
+        top: 270px;
+    }
+
+    .bg-banner{
+        height: 300px;
+    }
 }
 
 @include media-breakpoint-only(md) {

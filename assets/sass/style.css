@@ -5697,7 +5697,7 @@ button.bg-dark:focus {
           flex-direction: row !important;
 }
 
-.flex-column {
+.flex-column, .quick-links {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -6208,7 +6208,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 992px) {
-  .flex-lg-row {
+  .flex-lg-row, .quick-links {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -7050,8 +7050,7 @@ button.bg-dark:focus {
 }
 
 .pr-5,
-.px-5,
-.hero-left {
+.px-5 {
   padding-right: 3rem !important;
 }
 
@@ -7062,8 +7061,7 @@ button.bg-dark:focus {
 }
 
 .pl-5,
-.px-5,
-.hero-left {
+.px-5 {
   padding-left: 3rem !important;
 }
 
@@ -9324,7 +9322,7 @@ section {
      object-fit: fill;
 }
 
-.bg-color {
+.bg-color, .hero-on-mobile {
   background-color: #F7F7F8;
 }
 
@@ -9473,6 +9471,7 @@ section {
 
 .top-footer {
   border-bottom: 1px solid #6A6A6A;
+  gap: 40px;
 }
 
 .dropdown {
@@ -9587,7 +9586,7 @@ section {
 }
 
 .about-us-section {
-  gap: 80px;
+  gap: 40px;
 }
 
 .bg-banner {
@@ -9623,6 +9622,27 @@ section {
   }
   .fixed-top {
     position: static;
+  }
+  .hero-on-mobile {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../images/hero.png");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/hero.png");
+    background-size: cover;
+  }
+  .hero-on-mobile .text-muted, .hero-on-mobile .input-group label, .input-group .hero-on-mobile label, .hero-on-mobile .work-description, .hero-on-mobile .a-bit-about-me {
+    color: #F7F7F8 !important;
+  }
+  .hero-on-mobile .h1 {
+    color: #fff;
+  }
+  .service-cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .dropdown {
+    top: 270px;
+  }
+  .bg-banner {
+    height: 300px;
   }
 }
 
