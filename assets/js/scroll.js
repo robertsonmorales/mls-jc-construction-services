@@ -60,7 +60,7 @@ useScrolling('.title', {
 // SERVICE CARDS
 useScrolling('.card-group .card-service', {
     delay: 300,
-    distance: '15%',
+    distance: '5%',
     origin: 'bottom',
     easing: 'ease',
     interval: 100
@@ -77,28 +77,28 @@ useScrolling('.card', {
 });
 
 useScrolling('.card-img', {
-    delay: 300,
+    delay: 100,
     distance: '5%',
     origin: 'bottom',
     easing: 'ease',
 });
 
 useScrolling('.card-title', {
-    delay: 300,
+    delay: 100,
     distance: '5%',
     origin: 'left',
     easing: 'ease-out',
 });
 
 useScrolling('.card-text', {
-    delay: 300,
+    delay: 100,
     distance: '5%',
     origin: 'right',
     easing: 'ease',
 });
 
 useScrolling('.card-footer a', {
-    delay: 300,
+    delay: 100,
     distance: '10%',
     origin: 'bottom',
     easing: 'ease',
