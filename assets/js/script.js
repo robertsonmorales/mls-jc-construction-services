@@ -1,7 +1,5 @@
 feather.replace();
 
-// window.scrollTo(0,0);
-
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
     for (let i = 0; i < navbar.length; i++) {
@@ -23,7 +21,6 @@ function navSelected(id){
 function visibleToViewport(el){
     var rect = el.getBoundingClientRect();
 
-    // return rect;
     return (
         rect.top == 0 &&
         rect.left == 0 &&
@@ -31,21 +28,6 @@ function visibleToViewport(el){
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-
-// const navs = ['hero', 'services', 'works', 'skills', 'about', 'contact'];
-
-// var message = {};
-
-// document.addEventListener('scroll', () => {
-//     message = {
-//         visibiliy: visibleToViewport(document.getElementById('works')) 
-//             ? 'Visible to viewport'
-//             : 'Not Visible to viewport',
-//         rect: document.getElementById('services').getBoundingClientRect()
-//     }
-
-//     // console.log(message);
-// });
 
 $(() => {
     'use strict';
@@ -60,17 +42,6 @@ $(() => {
         $("#navbar").toggleClass('fixed-top', $(this).scrollTop() > $("#navbar").height());
         $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
 	});
-
-    // function navBarHeight(){
-    //     var set_height = $('#navbar').height() * 2;
-    //     $('#about').css('margin-top', set_height + "px");
-    //     $('#services').css('margin-top', set_height + "px");
-    //     $('#projects').css('margin-top', set_height + "px");
-    //     $('#skills').css('margin-top', set_height + "px");
-    //     $('#contact').css('margin-top', set_height + "px");
-    // }   
-
-    // navBarHeight();
 
     $('#nav-products').on('click', function(){
         $(this).next().toggle(50);
